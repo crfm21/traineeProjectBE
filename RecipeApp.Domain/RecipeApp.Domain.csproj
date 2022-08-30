@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Core\" />
+    <None Remove="Entities\" />
+    <None Remove="HelperClasses\" />
+    <None Remove="Entities\RepositoryInterfaces\" />
+    <None Remove="Microsoft.AspNetCore.Cryptography.KeyDerivation" />
+    <None Remove="Models\" />
+    <None Remove="Microsoft.AspNetCore.Http" />
+    <None Remove="Microsoft.AspNetCore.Http.Features" />
+    <None Remove="Validations\" />
+    <None Remove="Validations\User\" />
+    <None Remove="Validations\Core\" />
+    <None Remove="Validations\Ingredients\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core\" />
+    <Folder Include="Entities\" />
+    <Folder Include="HelperClasses\" />
+    <Folder Include="Entities\RepositoryInterfaces\" />
+    <Folder Include="Models\" />
+    <Folder Include="Validations\" />
+    <Folder Include="Validations\User\" />
+    <Folder Include="Validations\Core\" />
+    <Folder Include="Validations\Ingredients\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Cryptography.KeyDerivation" Version="5.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.0" />
+  </ItemGroup>
+</Project>

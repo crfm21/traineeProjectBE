@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="CoreRepository\" />
+    <None Remove="EntityRepositories\" />
+    <None Remove="HelperRepository\" />
+    <None Remove="Context\" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+    <None Remove="Microsoft.AspNetCore.Http.Features" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CoreRepository\" />
+    <Folder Include="EntityRepositories\" />
+    <Folder Include="HelperRepository\" />
+    <Folder Include="Context\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RecipeApp.Domain\RecipeApp.Domain.csproj" />
+  </ItemGroup>
+</Project>
